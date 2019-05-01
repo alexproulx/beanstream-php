@@ -58,8 +58,8 @@ class Profiles {
 		//process as is
 		$result = $this->_connector->processTransaction('POST', $endpoint, $data);
 
-		//send back the new customer code
-        return $result['customer_code'];
+		//send back the new profile data
+        return $result;
     }
 	
     /**
